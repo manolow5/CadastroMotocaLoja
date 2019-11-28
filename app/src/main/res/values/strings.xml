@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CadastroMotocaLoja</string>
+    <string name="title_activity_cadastro_loja">CadastroLojaActivity</string>
+
+
+    <string-array name="Categorias">
+        <item>petshop</item>
+        <item>mercado</item>
+        <item>farmacia</item>
+        <item>moda e cosmeticos</item>
+        <item>conveniência</item>
+        <item>eletrodomesticos</item>
+        <item>ultilidades domesticas</item>
+
+    </string-array>
+</resources>
