@@ -10,11 +10,16 @@
         android:id="@+id/btnFinalizarCadastro"
         android:layout_width="341dp"
         android:layout_height="59dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
         android:background="@color/utily"
         android:text="Finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        tools:layout_editor_absoluteX="35dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -44,23 +49,25 @@
         android:layout_width="309dp"
         android:layout_height="41dp"
         android:layout_gravity="center"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/boxCategoria"
-        app:layout_constraintEnd_toEndOf="@+id/boxCategoria"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/boxCategoria"
-        app:layout_constraintTop_toTopOf="@+id/boxCategoria"
-        app:layout_constraintVertical_bias="0.708"
+        app:layout_constraintBottom_toTopOf="@+id/inputSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autocomplete_fragment"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginRight="108dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
         android:text="Esta quase la...Finalize seu Cadastro"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
@@ -69,21 +76,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/boxCategoria"
-        android:layout_width="346dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:background="@drawable/bg_edit_text"
-        android:text="                              Selecione a sua categoria"
-        app:layout_constraintBottom_toTopOf="@+id/inputSenha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/autocomplete_fragment" />
 
     <TextView
         android:id="@+id/textView8"
@@ -113,7 +105,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boxCategoria"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -145,7 +137,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
-        app:layout_constraintBottom_toTopOf="@+id/boxCategoria"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCategoria"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNomeEmpresa"

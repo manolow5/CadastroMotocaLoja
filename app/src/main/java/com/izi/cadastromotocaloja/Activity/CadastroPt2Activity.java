@@ -55,8 +55,8 @@ public class CadastroPt2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_pt2);
-
         inicializarComponentes();
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.Categorias, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerCategoria.setAdapter(adapter);
@@ -75,18 +75,19 @@ public class CadastroPt2Activity extends AppCompatActivity {
     private void salvarComerciantePt2() { //save store object
 
         if (localizacao != null) {
-          //  String categoria = spinnerCategoria.getSelectedItem().toString();//geting a category
-          //  if(categoria == null){
+           String categoria = spinnerCategoria.getSelectedItem().toString();//geting a category
+            if(categoria != null){
                 empresa.setNomeEmpresa(inputNomeEmpresa.getText().toString());
                 empresa.setLocalizacao(localizacao);
-               // empresa.setCategoria(categoria);
+                empresa.setCategoria(categoria);
                 empresa.setSenha(inputSenha.getText().toString());
 
 
+
                 criaUsuarioFirebase(empresa.getEmail(), inputSenha.getText().toString());// create firebase user
-         //   }
-
-
+            }else {
+                Toast.makeText(this, "Digite um endereço", Toast.LENGTH_SHORT).show();
+            }
 
 
         }

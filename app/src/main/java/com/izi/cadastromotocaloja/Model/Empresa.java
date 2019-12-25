@@ -1,21 +1,8 @@
 package com.izi.cadastromotocaloja.Model;
-
-
-
-import android.util.Log;
-
-import androidx.annotation.NonNull;
-
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.Exclude;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Empresa implements Serializable {
 
